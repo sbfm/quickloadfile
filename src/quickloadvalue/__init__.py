@@ -1,6 +1,6 @@
 # coding: utf-8
 #
-#  外部ファイル読み込み処理のキャッシュ化
+#  事前処理が必要な変数読み込みの高速化(キャッシュ化)
 #  
 # Licence : MIT Licence
 # owner   : Fumiya Shibamata
@@ -15,7 +15,7 @@ def get(modelName, loadFunction, type=1, dir="./model/"):
     値の取得
         modelName : 保存するバイナリデータのファイル名
         loadFunction : キャッシュが無効の時に実行される取得処理
-        type : 将来的に実装される強制読み込み条件
+        type : 将来的に実装される強制読み込み条件（未指定か1を入れておけばmodelがないときのみ読み込み）
         dir : モデルデータを管理するディレクトリ(未指定時 ./ )
     """
     
