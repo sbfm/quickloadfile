@@ -1,4 +1,4 @@
 # quickloadfile
 
 # install
-pip install git+https://github.com/sbfm/quickloadfile
+pip install git+https://github.com/sbfm/quickloadvalue
